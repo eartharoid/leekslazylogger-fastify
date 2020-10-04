@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"description": "leekslazylogger fastify plugin",
 	"main": "lib/",
-	"funding": "https://github.com/eartharoid/leekslazylogger-express?sponsor=1",
+	"funding": "https://github.com/eartharoid/leekslazylogger-fastify?sponsor=1",
 	"dependencies": {
 		"fastify-plugin": "^2.3.4",
 		"leekslazylogger": "^2.0.5",
@@ -17,14 +17,14 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/eartharoid/leekslazylogger-express.git"
+		"url": "git+https://github.com/eartharoid/leekslazylogger-fastify.git"
 	},
 	"author": {
 		"name": "eartharoid"
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/eartharoid/leekslazylogger-express/issues"
+		"url": "https://github.com/eartharoid/leekslazylogger-fastify/issues"
 	},
 	"homepage": "https://logger.eartharoid.me/extensions/fastify",
 	"keywords": [
@@ -47,7 +47,7 @@
 		"leeks",
 		"leeks.js",
 		"leekslazylogger",
-		"express",
+		"fastify",
 		"fastify",
 		"plugin"
 	],
