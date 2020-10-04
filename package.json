@@ -1,6 +1,6 @@
 {
 	"name": "leekslazylogger-fastify",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "leekslazylogger fastify plugin",
 	"main": "lib/",
 	"funding": "https://github.com/eartharoid/leekslazylogger-fastify?sponsor=1",
