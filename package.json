@@ -1,0 +1,57 @@
+{
+	"name": "leekslazylogger-fastify",
+	"version": "0.0.1",
+	"description": "leekslazylogger fastify plugin",
+	"main": "lib/",
+	"funding": "https://github.com/eartharoid/leekslazylogger-express?sponsor=1",
+	"dependencies": {
+		"fastify-plugin": "^2.3.4",
+		"leekslazylogger": "^2.0.5",
+		"on-finished": "^2.3.0"
+	},
+	"scripts": {
+		"test": "node test/test"
+	},
+	"files": [
+		"lib/"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eartharoid/leekslazylogger-express.git"
+	},
+	"author": {
+		"name": "eartharoid"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/eartharoid/leekslazylogger-express/issues"
+	},
+	"homepage": "https://logger.eartharoid.me/extensions/fastify",
+	"keywords": [
+		"console",
+		"terminal",
+		"log",
+		"logger",
+		"log",
+		"file",
+		"files",
+		"color",
+		"colors",
+		"colour",
+		"colours",
+		"formatting",
+		"ansi-styles",
+		"ansi-colors",
+		"easy-to-use",
+		"lazy",
+		"leeks",
+		"leeks.js",
+		"leekslazylogger",
+		"express",
+		"fastify",
+		"plugin"
+	],
+	"devDependencies": {
+		"fastify": "^3.5.0"
+	}
+}
