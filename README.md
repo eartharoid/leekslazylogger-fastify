@@ -35,4 +35,4 @@ fastify.register(log.fastify)
 
 ## Donate
 
-[Buy me a coffee if you want :)](https://ko-fi.com/eartharoid)
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/eartharoid)

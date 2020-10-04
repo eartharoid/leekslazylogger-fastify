@@ -5,6 +5,7 @@
 	"main": "lib/",
 	"funding": "https://github.com/eartharoid/leekslazylogger-fastify?sponsor=1",
 	"dependencies": {
+		"fastify": "^3.5.0",
 		"fastify-plugin": "^2.3.4",
 		"leekslazylogger": "^2.0.5",
 		"on-finished": "^2.3.0"
@@ -50,8 +51,5 @@
 		"fastify",
 		"fastify",
 		"plugin"
-	],
-	"devDependencies": {
-		"fastify": "^3.5.0"
-	}
+	]
 }
