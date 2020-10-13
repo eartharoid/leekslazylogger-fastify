@@ -5,12 +5,14 @@ const Logger = require('../lib');
 const log = new Logger({
 	name: 'My fastify server'
 });
-
+new Logger({
+	name: 'My fastify server'
+});
 fastify.register(log.fastify, {
 	format: '{method} {protocol} &7{path} &6{route} {status-colour}{status} {time-colour}({time})'
 }); // logger
 
-fastify.get('*', (req, res) => {
+fastify.get('/', (req, res) => {
 	res.send(log.options);
 });
 
