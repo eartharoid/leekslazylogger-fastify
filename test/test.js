@@ -3,11 +3,12 @@ const port = 3000;
 
 const Logger = require('../lib');
 const log = new Logger({
-	name: 'My fastify server'
+	name: 'My fastify server',
+	fastify: {
+		type: 'warn'
+	}
 });
-new Logger({
-	name: 'My fastify server'
-});
+
 fastify.register(log.fastify, {
 	format: '{method} {protocol} &7{path} &6{route} {status-colour}{status} {time-colour}({time})'
 }); // logger
