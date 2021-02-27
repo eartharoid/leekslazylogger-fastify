@@ -5,7 +5,7 @@ const Logger = require('../lib');
 const log = new Logger({
 	name: 'My fastify server',
 	fastify: {
-		type: 'warn'
+		level: 'warn'
 	}
 });
 
