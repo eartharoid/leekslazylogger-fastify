@@ -1,22 +1,46 @@
-const fastify = require('fastify')();
-const port = 3000;
+const fastify = require('fastify');
+const app1 = fastify();
+const app2 = fastify();
 
 const Logger = require('../lib');
 const log = new Logger({
-	name: 'My fastify server',
-	fastify: {
-		level: 'warn'
+	name: 'Fastify test',
+	levels: {
+		http: {
+			format: '[{timestamp} | INFO] [HTTP] {text}'
+		}
 	}
 });
 
-fastify.register(log.fastify, {
-	format: '{method} {protocol} &7{path} &6{route} {status-colour}{status} {time-colour}({time})'
+app1.register(log.fastify({
+	level: 'http'
+})); // logger
+app2.register(log.fastify(), {
+	format: 'TWO {method} {protocol} &7{path} &6{route} {status-colour}{status} {time-color}({time})',
+	level: 'http'
 }); // logger
 
-fastify.get('/', (req, res) => {
+app1.get('/', (req, res) => {
+	res.send(log.options);
+});
+app2.get('/', (req, res) => {
 	res.send(log.options);
 });
 
-fastify.listen(port, () => {
-	log.info(`Example app listening at http://localhost:${port}`);
+app1.get('/:page', (req, res) => {
+	res.send({
+		status: '200 OK'
+	});
+});
+app2.get('/:page', (req, res) => {
+	res.send({
+		status: '200 OK'
+	});
+});
+
+app1.listen(3000, () => {
+	log.info('Example app 1 listening at http://localhost:3000');
+});
+app2.listen(3001, () => {
+	log.info('Example app 2 listening at http://localhost:3001');
 });

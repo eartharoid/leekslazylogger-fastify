@@ -1,6 +1,3 @@
 node_modules/
 logs/
 *.log
-package-lock.json
-
-pnpm-lock.yaml

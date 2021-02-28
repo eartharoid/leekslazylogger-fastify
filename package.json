@@ -1,12 +1,12 @@
 {
 	"name": "leekslazylogger-fastify",
-	"version": "0.0.6",
+	"version": "0.1.0",
 	"description": "leekslazylogger fastify plugin",
 	"main": "lib/",
 	"funding": "https://github.com/eartharoid/leekslazylogger-fastify?sponsor=1",
 	"dependencies": {
 		"fastify-plugin": "^3.0.0",
-		"leekslazylogger": "3.0.0",
+		"leekslazylogger": "^3.0.1",
 		"on-finished": "^2.3.0"
 	},
 	"scripts": {
@@ -45,7 +45,7 @@
 		"plugin"
 	],
 	"devDependencies": {
-		"eslint": "^7.20.0",
+		"eslint": "^7.21.0",
 		"fastify": "^3.12.0"
 	}
 }
