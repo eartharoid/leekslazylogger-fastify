@@ -2,6 +2,8 @@ const fastify = require('fastify');
 const app1 = fastify();
 const app2 = fastify();
 
+const requestIp = require('request-ip');
+
 const Logger = require('../lib');
 const log = new Logger({
 	name: 'Fastify test',
@@ -16,7 +18,7 @@ app1.register(log.fastify({
 	level: 'http'
 })); // logger
 app2.register(log.fastify(), {
-	format: 'TWO {method} {protocol} &7{path} &6{route} {status-colour}{status} {time-color}({time})',
+	format: req => `TWO {method} ${requestIp.getClientIp(req)} {protocol} &7{path} &6{route} {status-colour}{status} {time-color}({time})`,
 	level: 'http'
 }); // logger
 
